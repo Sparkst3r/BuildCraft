@@ -17,7 +17,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
-import buildcraft.core.CreativeTabBuildCraft;
 import buildcraft.core.utils.Utils;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -39,7 +38,6 @@ public class BlockPump extends BlockMachineRoot {
 		super(id, Material.iron);
 		
 		this.setHardness(5F);
-		this.setCreativeTab(CreativeTabBuildCraft.tabBuildCraft);
 		this.setStepSound(soundStoneFootstep);
 	}
 

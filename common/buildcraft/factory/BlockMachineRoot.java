@@ -17,6 +17,14 @@ import net.minecraft.world.World;
 import buildcraft.core.CreativeTabBuildCraft;
 import buildcraft.core.IMachine;
 
+/**
+ * BlockMachineRoot
+ * 
+ * Root of all machine type blocks
+ * 
+ * @author SpaceToad
+ * @author BuildCraft team
+ */
 public abstract class BlockMachineRoot extends Block {
 
 	protected BlockMachineRoot(int id, Material material) {
@@ -44,10 +52,16 @@ public abstract class BlockMachineRoot extends Block {
 		return super.getBlockBrightness(world, x, y, z);
 	}
 	
-	@Override
-	public abstract boolean hasTileEntity(int meta);
-	
+	/**
+	 * Returns a new instance of the TileEntity for this block.
+	 */
 	@Override
 	public abstract TileEntity createTileEntity(World world, int meta);
+
+	/**
+	 * Returns true if this block has a TileEntity
+	 */
+	@Override
+	public abstract boolean hasTileEntity(int meta);
 
 }
